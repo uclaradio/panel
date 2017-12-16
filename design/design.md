@@ -28,6 +28,28 @@ All users of Panel should be current active members of UCLA Radio. However, with
 
 ## Complete Feature List
 
+* View station bylaws
+* View all sub requests
+* Request a press pass
+* Sign up for roster
+* Archive
+* Nominate a show of the month
+* Elrond
+
+Interns:
+
+* Submit Staffing Points (available to Interns, DJs)
+* View Staffing Points (Interns, DJs can view their own; managers can view all)
+
+Show (only available to DJs):
+
+* Submit NMFs (Only available to DJs)
+* Request an ISP
+* Submit a sub request
+* Request a graphic for your show
+* Request a photo/video for your show
+* Request a theme song for your show
+
 ## Flowchart
 
 ## Screen by Screen Specification
