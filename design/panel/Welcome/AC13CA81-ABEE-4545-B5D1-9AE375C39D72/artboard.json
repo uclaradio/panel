@@ -1,0 +1,103 @@
+{
+  "_class": "artboard",
+  "backgroundColor": {
+    "_class": "color",
+    "alpha": 1,
+    "blue": 1,
+    "green": 1,
+    "red": 1
+  },
+  "do_objectID": "AC13CA81-ABEE-4545-B5D1-9AE375C39D72",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": false,
+    "do_objectID": "6B76B388-2B45-4AC2-B534-7FBA5A1C9172",
+    "height": 1024,
+    "width": 1440,
+    "x": 886,
+    "y": 185
+  },
+  "grid": {
+    "_class": "simpleGrid",
+    "gridSize": 20,
+    "isEnabled": false,
+    "thickGridTimes": 10
+  },
+  "hasBackgroundColor": false,
+  "hasClickThrough": true,
+  "horizontalRulerData": {
+    "_class": "rulerData",
+    "base": 0,
+    "guides": [
+    ]
+  },
+  "includeBackgroundColorInExport": true,
+  "includeInCloudUpload": true,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 0,
+  "layers": [
+    {
+      "class": "text",
+      "id": "E068623F-F242-403D-BCFB-9826A2286281"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "2FA60AE3-D257-4807-8BF1-681E2FEABF00"
+    },
+    {
+      "class": "text",
+      "id": "CD975455-0C32-47C7-B2E5-1103DFA800FF"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "F7C6A551-729C-4CEF-93E1-43B358F5BAEC"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "E953721A-512F-4F0A-A7C2-DCA73FD002D9"
+    },
+    {
+      "class": "text",
+      "id": "2C57B9C8-9F09-4C2D-8F47-6D54B1B8A8D0"
+    },
+    {
+      "class": "text",
+      "id": "0456132B-539F-4F3D-B6E1-53332884BB88"
+    },
+    {
+      "class": "text",
+      "id": "485873D6-4108-4E36-AF88-24F10D2F7CAC"
+    }
+  ],
+  "name": "Desktop HD",
+  "nameIsFixed": false,
+  "resizesContent": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": true,
+  "style": {
+    "_class": "style",
+    "endDecorationType": 0,
+    "miterLimit": 10,
+    "startDecorationType": 0
+  },
+  "verticalRulerData": {
+    "_class": "rulerData",
+    "base": 0,
+    "guides": [
+    ]
+  }
+}
