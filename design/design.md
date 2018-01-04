@@ -74,3 +74,54 @@ Managers:
 ## Flowchart
 
 ## Screen by Screen Specification
+
+### Login Page
+The login page should be the page that anyone is redirected to if they are not authenticated and try to access any page of Panel.
+
+### Account Creation
+* Full Name
+* Username
+* Email
+* Password
+
+### Password Reset
+
+### Pages
+A list of links with a title and description for each link. Ideally this list is searchable and sortable. If the user is a Manager/Admin, they should be able to add links to this page. 
+
+### User Page
+A user can edit the following information about themself: 
+* Image
+* Full Name
+* DJ Name
+* Phone Number
+* Bio
+* Social Media Links
+
+### Show Page
+The page for DJs to manage shows they host or co-host. They have the option to Create a Show or Delete a Show. Their shows list will contain shows they created or were added to as a Co-Host/Co-DJ. 
+
+Selecting a show from their show list allows them to edit the following details about the show: 
+* Image
+* Show Name
+* Show Time
+* DJ(s)
+* Show Info
+* Social Media Links
+
+### Admin Page
+The main admin page will be a collection of panels that appear based on the User type. 
+
+As a manager, you will only see the following panels:
+* Manager Info
+* Select Show of the Week
+
+As an admin, you will see the panels above AND:
+* Keep/Delete Chat Messages
+* Promo Banner Images
+
+### Admin Subpage - All Users
+This subpage is only visible to Admins. The page displays all users in a table format and allows Admins to modify/delete users information.
+
+### Admin Subpage - All Shows
+This subpage is only visible to Admins. The page displays all shows in a list and allows them to edit each show in a similar fashion to the Show Page. 
