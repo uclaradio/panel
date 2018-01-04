@@ -13,7 +13,7 @@
 
 ## Overview
 
-Panel is a web service that serves as UCLA Radio's main internal information tracking and management site.
+Panel is a web service that serves as UCLA Radio's main internal information tracking and management site. Panel will contain what is currently known as [uclaradio.com/panel](https://uclaradio.com/panel) and [uclaradio.com/pages](https://uclaradio.com/pages).
 
 **Note**: This spec is not complete and is constantly being revised.
 
@@ -27,8 +27,35 @@ All users of Panel should be current active members of UCLA Radio. However, with
 4. **Admins** should be able to update any show, department information, moderate chats. The current web manager(s), assistant general manager, and the general manager should all be admins.
 
 ## Complete Feature List
+Breakdown of features for Panel and Pages based on user type: 
 
+### Panel
+All:
+* Request an Account
+* Password Reset
+* User Profile
+* Access to Pages
+
+DJs:
+* Create/Delete a Show
+
+Managers:
+* Update/Add Links to Pages
+* Manager Profile
+* Set Show of the Week
+
+Admins:
+* Manage all users
+* Manage all shows
+* Set Promo Banner images
+* Moderate chat
+
+### Pages
+All:
 * View station bylaws
+* Submit a sub request
+* Submit a photo/video request
+* Submit an ISP
 * View all sub requests
 * Request a press pass
 * Sign up for roster
@@ -36,19 +63,13 @@ All users of Panel should be current active members of UCLA Radio. However, with
 * Nominate a show of the month
 * Elrond
 
-Interns:
-
-* Submit Staffing Points (available to Interns, DJs)
-* View Staffing Points (Interns, DJs can view their own; managers can view all)
-
-Show (only available to DJs):
-
+DJs:
 * Submit NMFs (Only available to DJs)
-* Request an ISP
-* Submit a sub request
 * Request a graphic for your show
-* Request a photo/video for your show
 * Request a theme song for your show
+
+Managers:
+* Pass/Fail Roster List
 
 ## Flowchart
 
