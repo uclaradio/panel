@@ -1,0 +1,57 @@
+{
+  "_class": "group",
+  "do_objectID": "4181EA0F-BC50-451F-BC1D-B6313ED1719A",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": false,
+    "height": 260,
+    "width": 260,
+    "x": 590,
+    "y": 160
+  },
+  "hasClickThrough": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 1,
+  "layers": [
+    {
+      "class": "shapeGroup",
+      "id": "91B8DD1F-5A91-4A7B-935D-0188F5E1FFBB"
+    },
+    {
+      "class": "bitmap",
+      "id": "E3EC8B60-2FA5-4D77-B46A-6FFC91BB7BD3"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "B58662FA-3A64-44CD-89EC-8ABC16395F94"
+    },
+    {
+      "class": "text",
+      "id": "AE287F02-5754-426C-9F1B-5A8B85CB314E"
+    }
+  ],
+  "name": "listening square",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "endDecorationType": 0,
+    "miterLimit": 10,
+    "startDecorationType": 0
+  }
+}
