@@ -43,6 +43,7 @@ Managers:
 * Update/Add Links to Pages
 * Manager Profile
 * Set Show of the Week
+* Approve/Reject Account Requests
 
 Admins:
 * Manage all users
@@ -115,6 +116,7 @@ The main admin page will be a collection of panels that appear based on the User
 As a manager, you will only see the following panels:
 * Manager Info
 * Select Show of the Week
+* Approve/Reject Account Requests
 
 As an admin, you will see the panels above AND:
 * Keep/Delete Chat Messages
