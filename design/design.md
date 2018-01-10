@@ -96,6 +96,7 @@ A user can edit the following information about themself:
 * Full Name
 * DJ Name
 * Phone Number
+* Department
 * Bio
 * Social Media Links
 
