@@ -27,7 +27,7 @@
   "prettier": {
     "overrides": [
       {
-        "files": "*.js",
+        "files": "*.{js,ts,tsx}",
         "options": {
           "singleQuote": true,
           "trailingComma": "es5"
