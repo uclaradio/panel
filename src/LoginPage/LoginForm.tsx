@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import glamorous from 'glamorous';
 
 const RadioInput = glamorous.input({
@@ -17,7 +18,7 @@ const LoginForm = () => (
     </label>
     <button type="submit">Submit</button>
     <span>I forgot my password :(</span>
-    <span>or, request an account</span>
+    <Link to="/request-account">or, request an account</Link>
   </form>
 );
 
