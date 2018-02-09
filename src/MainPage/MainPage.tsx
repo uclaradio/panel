@@ -2,9 +2,20 @@ import * as React from 'react';
 
 class MainPage extends React.Component {
   render() {
-    const haejin = 'Haejin';
+    // const haejin = 'Haejin';
 
-    return <h1>Hello {haejin + 5 + 4}</h1>;
+    return (
+      <header>Panel
+
+        <span>button</span>
+        <span> button </span> 
+        <span> button </span> 
+
+        
+      </header>
+    
+    );
+
   }
 }
 
