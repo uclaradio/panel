@@ -8,6 +8,6 @@ cache:
 script:
   - npm install codecov -g
   - yarn build
-  - yarn test
+  - yarn test --coverage
 after_success:
   - codecov

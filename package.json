@@ -33,10 +33,6 @@
       "prettier/prettier": "error"
     }
   },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
-  },
   "dependencies": {
     "glamor": "^2.20.40",
     "glamorous": "^4.11.4",
