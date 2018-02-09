@@ -6,7 +6,17 @@
     {
       "type": "npm",
       "script": "start",
-      "problemMatcher": ["$eslint-stylish"]
+      "problemMatcher": ["$eslint-stylish"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": ["$eslint-stylish"],
+      "group": "test"
     }
   ]
 }
