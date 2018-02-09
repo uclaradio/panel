@@ -36,7 +36,7 @@ to start the development server. If you're on VS Code, you can also trigger this
 
 ### Committing
 
-We use this github repository to host and maintain all Panel code.
+We use this github repository to host and maintain all Panel code, and follow a git workflow fairly similar to the [GitHub flow](https://guides.github.com/introduction/flow/). New branches should follow the naming scheme of `<your-first-name>/<feature-name>`, e.g., `nathan/comic-sans-mode`. Pull requests should be made after the branch is created, given a descriptive title, and should be prefixed with `[WIP]` (for "work in progress") until considered ready to merge into `master`. `master` is considered to be production ready and is autodeployed. All pull requests should pass all tests, be code reviewed, and be determined to be working in the staging environment before being merged to `master`. All merges to `master` should be squash merges to keep the git history clean and be done via GitHub.
 
 ### Debugging
 
