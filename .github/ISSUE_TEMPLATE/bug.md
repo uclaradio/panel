@@ -48,3 +48,7 @@ This is a:
 * [ ] Safari (**Version:** )
 * [ ] Opera (**Version:** )
   <!--- If other, please add -->
+
+## Further Comments
+
+<!--- Please add anything that you'd like to say that you didn't already get a chance to. You can delete this if you don't have anything to add. -->
