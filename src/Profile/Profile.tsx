@@ -1,5 +1,20 @@
 import * as React from 'react';
+import { Div } from 'glamorous';
 
-const Profile = () => <h1>Profile Page</h1>;
+import ProfileForm from './ProfileForm';
+
+const Profile = () => (
+  <Div
+    className="profile-form"
+    display="flex"
+    alignItems="center"
+    justifyContent="center"
+    height="75vh"
+  >
+    <Div className="profile">
+      <ProfileForm />
+    </Div>
+  </Div>
+);
 
 export default Profile;
