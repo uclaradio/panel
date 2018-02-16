@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-router-dom": "^4.2.3",
+    "canvas": "^1.6.9",
     "glamor": "^2.20.40",
     "glamorous": "^4.11.4",
     "react": "^16.2.0",
