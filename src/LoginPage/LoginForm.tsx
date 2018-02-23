@@ -1,38 +1,57 @@
 import * as React from 'react';
-import glamorous from 'glamorous';
+import glamorous, { Div } from 'glamorous';
 
 const RadioInput = glamorous.input({
   backgroundColor: 'transparent',
   borderColor: 'black',
-  borderWidth: '0.5px',
+  borderWidth: '1px',
   borderRadius: 5,
+  width: '25vw',
+  margin: 'auto',
+});
+
+const InputLabel = glamorous.label({
+  textAlign: 'left',
 });
 
 const LoginButton = glamorous.button({
   backgroundColor: '#cc00cc',
   color: 'white',
-  border: '0px',
+  border: '1px',
   padding: '7px 15px',
-  borderRadius: 10,
+  borderRadius: 7,
+  float: 'left',
+});
+
+const AccountLink = glamorous.a({
+  color: '#958888',
+  fontSize: '.9vw',
 });
 
 const LoginForm = () => (
   <form>
-    <label>
-      Email: 
+    <br/>
+    <InputLabel>
+      <div> Email Address </div>
       <RadioInput type="text" name="name" />
-    </label>
+    </InputLabel>
     <br/>
     <br/>
-    <label>
-      Password: 
+    <InputLabel>
+      <div> Password </div>
       <RadioInput type="text" name="name" />
-    </label>
+    </InputLabel>
+    <br/>
     <br/>
     <LoginButton type="submit">Login</LoginButton>
-    <span>I forgot my password :(</span>
+    <Div
+      float="right"
+    >
+    <AccountLink>I forgot my password :(</AccountLink>
+    </Div>
     <br/>
-    <span>or, request an account</span>
+    <br/>
+    <AccountLink>or, request an account</AccountLink>
   </form>
 );
 
