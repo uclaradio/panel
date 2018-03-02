@@ -4,9 +4,10 @@ import glamorous, { Div } from 'glamorous';
 const RadioInput = glamorous.input({
   backgroundColor: 'transparent',
   borderColor: 'black',
-  borderWidth: '1px',
+  borderWidth: '1.2px',
   borderRadius: 5,
   width: '25vw',
+  height: '1.4vw',
   margin: 'auto',
 });
 
@@ -25,12 +26,18 @@ const LoginButton = glamorous.button({
 
 const AccountLink = glamorous.a({
   color: '#958888',
-  fontSize: '.9vw',
+  fontSize: '1vw',
+  fontFamily: 'Josefin Sans',
 });
 
 const LoginForm = () => (
   <form>
     <br/>
+    <Div
+      fontFamily="Josefin Sans"
+      fontSize="1vw"
+      color="#464646"
+    >
     <InputLabel>
       <div> Email Address </div>
       <RadioInput type="text" name="name" />
@@ -39,16 +46,18 @@ const LoginForm = () => (
     <br/>
     <InputLabel>
       <div> Password </div>
-      <RadioInput type="text" name="name" />
+      <RadioInput type="password" name="name" />
     </InputLabel>
-    <br/>
+    </Div>
     <br/>
     <LoginButton type="submit">Login</LoginButton>
     <Div
       float="right"
+      paddingTop="7px"
     >
     <AccountLink>I forgot my password :(</AccountLink>
     </Div>
+    <br/>
     <br/>
     <br/>
     <AccountLink>or, request an account</AccountLink>
