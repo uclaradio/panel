@@ -9,7 +9,6 @@ const Profile = () => (
     display="flex"
     alignItems="center"
     justifyContent="center"
-    height="75vh"
   >
     <Div className="profile">
       <ProfileForm />
