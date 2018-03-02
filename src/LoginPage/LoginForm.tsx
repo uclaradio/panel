@@ -35,8 +35,8 @@ const LoginForm = () => (
     <br/>
     <Div
       fontFamily="Josefin Sans"
-      fontSize="1vw"
-      color="#464646"
+      fontSize="1.1vw"
+      color="#5A5A5A"
     >
     <InputLabel>
       <div> Email Address </div>
