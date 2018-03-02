@@ -9,8 +9,6 @@ import Home from './Home/Home';
 import Profile from './Profile/Profile';
 import Shows from './Shows/Shows';
 
-import MainPage from './MainPage/MainPage';
-
 class App extends React.Component {
   render() {
     return (
