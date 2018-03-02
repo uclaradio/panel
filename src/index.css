@@ -3,23 +3,3 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
-.profile-form form {
-  background-color: rgba(255, 255, 255, 0.6); /* White background 60% opacity */
-  padding: 20px 50px;
-  display: block;
-}
-
-label {
-  display: block;
-  margin-bottom: 2%;
-}
-
-input {
-  display: block;
-  margin-bottom: 10%;
-}
-
-input:focus {
-  background-color: whitesmoke;
-}
