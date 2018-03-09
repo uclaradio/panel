@@ -1,35 +1,16 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import glamorous from 'glamorous';
-// const Home = () => <h1>Home Page</h1>;
+import './Home.css';
 const { Div } = glamorous;
+import PageCard from './PageCard';
+import CircleButton from './CircleButton';
 
-const CircleButton = glamorous.button({
-  borderRadius: '50%',
-  backgroundColor: 'black',
-  width: '4vw',
-  height: '4vw',
-  padding: 3,
-});
-
-const RectangleThing = glamorous.div({
-  width: 380,
-  height: 250,
-  backgroundColor: 'rgba(255, 255, 255, 0.8)',
-});
-
-// const LinkGrid = glamorous.div({
-//   display:"grid",
-//   grid-template-columns: 400 400 400,
-//   grid-column-gap: 40px,
-
-// })
 class Home extends React.Component {
   render() {
     return (
       <Div margin="5px auto" padding="20px" width="100%">
-        <Div id="nav" display="grid" grid-template-columns="80vw 20vw">
-          <h1> panel.uclaradio.com: links </h1>
+        <Div id="nav" display="flex">
+          <h1 id="titleText"> panel.uclaradio.com: links </h1>
           <Div
             className="buttonGroup"
             display="grid"
@@ -41,53 +22,59 @@ class Home extends React.Component {
           </Div>
         </Div>
 
-        <Div id="search" margin-bottom="25px">
-          <Div textAlign="center">
-            <input type="text" id="searchBar" color="rgba(255,255,255,.5)" />
+        <Div id="search" display="flex" justifyContent="center">
+          <Div id="searchPadding" width={600} padding="30px">
+            <input placeholder="Search" type="text" id="searchBar" />
           </Div>
         </Div>
 
         <Div
           className="link-grid"
           display="grid"
-          grid-template-columns="repeat(3,400px)"
-          grid-template-rows="repeat(9, 400px)"
-          grid-column-gap="50px"
+          grid-template-columns="repeat(auto-fill,minmax(400px, 1fr))"
+          grid-template-rows="repeat(9, minmax(400px, 1fr))"
+          grid-column-gap="30px"
           padding="50px"
         >
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
-          <RectangleThing> 1 </RectangleThing>
-          <RectangleThing> 2 </RectangleThing>
-          <RectangleThing> 3 </RectangleThing>
+          {/* {
+            this.props.pages && this.props.pages.map(page => (
+              <PageCard id={page.id}> page.name </PageCard>
+            ))
+          } */}
+
+          <PageCard> 1 </PageCard>
+          <PageCard> 2 </PageCard>
+          <PageCard> 3 </PageCard>
+          <PageCard> 4 </PageCard>
+          <PageCard> 5 </PageCard>
+          <PageCard> 6 </PageCard>
+          <PageCard> 7 </PageCard>
+          <PageCard> 8 </PageCard>
+          <PageCard> 9 </PageCard>
+          <PageCard> 10 </PageCard>
+          <PageCard> 11 </PageCard>
+          <PageCard> 12 </PageCard>
+          <PageCard> 13 </PageCard>
+          <PageCard> 14 </PageCard>
+          <PageCard> 15 </PageCard>
+          <PageCard> 16 </PageCard>
+          <PageCard> 2 </PageCard>
+          <PageCard> 3 </PageCard>
+          <PageCard> 1 </PageCard>
+          <PageCard> 2 </PageCard>
+          <PageCard> 3 </PageCard>
+          <PageCard> 1 </PageCard>
+          <PageCard> 2 </PageCard>
+          <PageCard> 3 </PageCard>
+          <PageCard> 1 </PageCard>
+          <PageCard> 2 </PageCard>
+          <PageCard> 3 </PageCard>
         </Div>
       </Div>
     );
   }
 }
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+// ReactDOM.render(<Home />, document.getElementById('root'));
 
 export default Home;

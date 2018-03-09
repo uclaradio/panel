@@ -1,0 +1,22 @@
+*:focus {
+  outline: none !important;
+}
+
+#searchBar {
+  background-color: transparent;
+  height: 65px;
+  width: 100%;
+  font-size: 1.875rem;
+  font-weight: 300;
+  border-color: black;
+  border-width: 1px;
+  padding: 10px;
+}
+
+#nav {
+  justify-content: flex-end;
+}
+
+#titleText {
+  margin-right: auto;
+}
