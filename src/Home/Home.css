@@ -13,7 +13,8 @@
   padding: 10px;
 }
 
-#nav {
+nav {
+  display: flex;
   justify-content: flex-end;
 }
 

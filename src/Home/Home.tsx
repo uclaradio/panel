@@ -5,22 +5,26 @@ const { Div } = glamorous;
 import PageCard from './PageCard';
 import CircleButton from './CircleButton';
 
+// https://codepen.io/chriscoyier/pen/LWMdRv  for flexbox grid combo
+// https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
+// https://github.com/r-park/soundcloud-redux/blob/master/src/views/components/search-bar/search-bar.scss
+
 class Home extends React.Component {
   render() {
     return (
       <Div margin="5px auto" padding="20px" width="100%">
-        <Div id="nav" display="flex">
+        <nav>
           <h1 id="titleText"> panel.uclaradio.com: links </h1>
           <Div
             className="buttonGroup"
             display="grid"
-            grid-template-columns="5vw 5vw 5vw"
+            grid-template-columns="5fr 5fr 5fr"
           >
             <CircleButton />
             <CircleButton />
             <CircleButton />
           </Div>
-        </Div>
+        </nav>
 
         <Div id="search" display="flex" justifyContent="center">
           <Div id="searchPadding" width={600} padding="30px">
@@ -36,12 +40,6 @@ class Home extends React.Component {
           grid-column-gap="30px"
           padding="50px"
         >
-          {/* {
-            this.props.pages && this.props.pages.map(page => (
-              <PageCard id={page.id}> page.name </PageCard>
-            ))
-          } */}
-
           <PageCard> 1 </PageCard>
           <PageCard> 2 </PageCard>
           <PageCard> 3 </PageCard>
@@ -74,7 +72,5 @@ class Home extends React.Component {
     );
   }
 }
-
-// ReactDOM.render(<Home />, document.getElementById('root'));
 
 export default Home;
