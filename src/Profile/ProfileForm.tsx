@@ -9,8 +9,12 @@ import ProfilePicture from './ProfilePicture';
 const ProfileForm = () => (
   <Form
     backgroundColor="rgba(255, 255, 255, 0.6)"
-    padding="20px 50px"
-    display="block"
+    padding="2rem 2rem"
+    margin="2rem"
+    display="flex"
+    flexDirection="column"
+    alignItems="center"
+    spaceBetween="1rem"
   >
     <ProfilePicture />
     <ProfileLabel>

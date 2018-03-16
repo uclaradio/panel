@@ -2,7 +2,7 @@ import glamorous from 'glamorous';
 
 const ProfileLabel = glamorous.label({
   fontFamily: 'sans-serif',
-  fontSize: 15,
+  fontSize: '15px',
   display: 'block',
   marginBottom: '2%',
 });
