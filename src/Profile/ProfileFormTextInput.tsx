@@ -8,9 +8,9 @@ const ProfileFormTextInput = glamorous.input({
   height: '2.5rem',
   width: '20rem',
   border: '0.2px solid black',
-  borderRadius: '0.5rem',
+  borderRadius: '0.25rem',
   display: 'block',
-  marginBottom: '10%',
+  marginBottom: '0.5rem',
   transition: 'all .3s',
   textIndent: '5px',
 

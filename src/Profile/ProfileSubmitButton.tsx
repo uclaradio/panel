@@ -10,6 +10,7 @@ const SubmitButton = glamorous.button({
   fontSize: '15px',
   height: '2.5rem',
   width: '20rem',
+  marginTop: '1rem',
   borderRadius: '0.25rem',
 });
 
