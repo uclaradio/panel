@@ -8,8 +8,5 @@ collectors:
     settings:
       batch_mode: true
       related_pr_behavior: close
-      github_assignees:
-      - nathunsmitty
-      - binerys
       # github_labels:
       # - dependency
