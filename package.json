@@ -13,7 +13,10 @@
     "postrewrite": "yarnhook"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json,css,scss,md}": ["prettier --write", "git add"]
+    "*.{js,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "prettier": {
     "overrides": [
@@ -28,7 +31,9 @@
   },
   "eslintConfig": {
     "extends": "react-app",
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": "error"
     }
@@ -36,24 +41,24 @@
   "dependencies": {
     "canvas": "^1.6.9",
     "glamor": "^2.20.40",
-    "glamorous": "^4.11.4",
+    "glamorous": "^4.12.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts-ts": "2.13.0",
+    "react-scripts-ts": "2.14.0",
     "trianglify": "^1.2.0"
   },
   "devDependencies": {
-    "@types/jest": "^22.1.1",
-    "@types/node": "^9.3.0",
-    "@types/react": "^16.0.36",
-    "@types/react-dom": "^16.0.3",
-    "@types/react-router-dom": "^4.2.3",
+    "@types/jest": "^22.2.0",
+    "@types/node": "^9.4.7",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-router-dom": "^4.2.5",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
-    "lint-staged": "^6.1.0",
-    "prettier": "^1.10.2",
-    "typescript": "^2.7.1",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "typescript": "^2.7.2",
     "yarnhook": "^0.1.1"
   }
 }
