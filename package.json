@@ -58,7 +58,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.0.2",
     "prettier": "^1.11.1",
-    "typescript": "^2.7.1",
+    "typescript": "^2.8.1",
     "yarnhook": "^0.1.1"
   }
 }
