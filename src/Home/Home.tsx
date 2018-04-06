@@ -5,21 +5,13 @@ const { Div } = glamorous;
 import PageCard from './PageCard';
 import CircleButton from './CircleButton';
 
-// https://codepen.io/chriscoyier/pen/LWMdRv  for flexbox grid combo
-// https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
-// https://github.com/r-park/soundcloud-redux/blob/master/src/views/components/search-bar/search-bar.scss
-
 class Home extends React.Component {
   render() {
     return (
       <Div margin="5px auto" padding="20px" width="100%">
         <nav>
           <h1 id="titleText"> panel.uclaradio.com: links </h1>
-          <Div
-            className="buttonGroup"
-            display="grid"
-            grid-template-columns="5fr 5fr 5fr"
-          >
+          <Div className="buttonGroup">
             <CircleButton />
             <CircleButton />
             <CircleButton />
