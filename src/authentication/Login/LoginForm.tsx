@@ -8,7 +8,7 @@ const RadioInput = glamorous.input({
   borderRadius: 5,
   width: '25vw',
   height: '1.4vw',
-  margin: 'auto',
+  marginBottom: '1vw',
 });
 
 const InputLabel = glamorous.label({
@@ -32,35 +32,32 @@ const AccountLink = glamorous.a({
 
 const LoginForm = () => (
   <form>
-    <br/>
     <Div
       fontFamily="Josefin Sans"
       fontSize="1.1vw"
       color="#5A5A5A"
     >
-    <InputLabel>
-      <div> Email Address </div>
-      <RadioInput type="text" name="name" />
-    </InputLabel>
-    <br/>
-    <br/>
-    <InputLabel>
-      <div> Password </div>
-      <RadioInput type="password" name="name" />
-    </InputLabel>
+      <InputLabel>
+        <div> Email Address </div>
+        <RadioInput type="text" name="name" />
+      </InputLabel>
+      <InputLabel>
+        <div> Password </div>
+        <RadioInput type="password" name="name" />
+      </InputLabel>
     </Div>
-    <br/>
     <LoginButton type="submit">Login</LoginButton>
     <Div
       float="right"
-      paddingTop="7px"
+      paddingTop=".50vw"
     >
-    <AccountLink>I forgot my password :(</AccountLink>
+      <AccountLink>I forgot my password :(</AccountLink>
     </Div>
-    <br/>
-    <br/>
-    <br/>
-    <AccountLink>or, request an account</AccountLink>
+    <Div
+      paddingTop="3vw"
+    >
+      <AccountLink>or, request an account</AccountLink>
+    </Div>
   </form>
 );
 
