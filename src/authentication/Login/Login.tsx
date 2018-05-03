@@ -11,6 +11,8 @@ const LoginPage = () => (
     alignItems="center"
     justifyContent="center"
     height="75vh"
+    font-family="Arial"
+    text-align="center"
   >
     <Div className="login">
       <LoginHeader />
