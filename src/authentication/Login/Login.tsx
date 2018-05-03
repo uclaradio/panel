@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Div } from 'glamorous';
 
-import LoginHeader from './LoginHeader';
+import AuthHeader from '../AuthHeader';
 import LoginForm from './LoginForm';
 
 const LoginPage = () => (
@@ -15,7 +15,7 @@ const LoginPage = () => (
     text-align="center"
   >
     <Div className="login">
-      <LoginHeader />
+      <AuthHeader />
       <LoginForm />
     </Div>
   </Div>
