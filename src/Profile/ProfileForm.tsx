@@ -14,7 +14,6 @@ const ProfileForm = () => (
     display="flex"
     flexDirection="column"
     alignItems="center"
-    spaceBetween="2rem"
   >
     <ProfilePicture />
     <ProfileLabel>
