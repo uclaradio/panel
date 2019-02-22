@@ -1,0 +1,67 @@
+.profile-container {
+    width: 1200px;
+    height: 256px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-picture {
+    width: 174px;
+    height: 174px;
+    margin: 30px;
+    border-radius: 50%;
+    background: black;
+    box-sizing: border-box;
+}
+
+.right-title {
+    align-self: flex-start;
+    padding: 30px;
+}
+
+.right-input {
+    padding: 30px;
+}
+
+.vl {
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    height: 207px;
+}
+
+.info-wrapper {
+    width: 250px;
+    align-self: flex-start;
+    padding: 30px;
+}
+
+.title-text {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+}
+
+.body-text {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+}

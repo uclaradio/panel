@@ -13,7 +13,10 @@
     "postrewrite": "yarnhook"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json,css,scss,md}": ["prettier --write", "git add"]
+    "*.{js,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "prettier": {
     "overrides": [
@@ -28,20 +31,27 @@
   },
   "eslintConfig": {
     "extends": "react-app",
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": "error"
     }
   },
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@types/material-ui": "^0.21.6",
     "canvas": "1.6.9",
     "glamor": "2.20.40",
     "glamorous": "4.11.4",
-    "react": "16.2.0",
+    "material-ui": "^0.20.2",
+    "prop-types": "^15.7.2",
+    "react": "16.3.0",
     "react-dom": "16.2.0",
     "react-router-dom": "4.2.2",
     "react-scripts-ts": "2.13.0",
-    "trianglify": "1.2.0"
+    "trianglify": "1.2.0",
+    "typeface-sarabun": "0.0.71"
   },
   "devDependencies": {
     "@types/jest": "22.1.1",
