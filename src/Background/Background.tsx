@@ -23,7 +23,11 @@ class TriangleCanvas extends React.Component {
   }
 
   renderCanvas() {
-    const pattern = Trianglify({ x_colors: 'Spectral' });
+    const pattern = Trianglify({
+      width: window.innerWidth,
+      height: window.innerHeight,
+      x_colors: 'Spectral'
+    });
     pattern.canvas(document.getElementById('background'));
   }
 
