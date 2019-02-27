@@ -10,15 +10,15 @@ class Home extends React.Component {
       <div>
         <Header />
         <div className="cards-wrapper">
-          <div>
+          <div className="title">
             DJ Profile
           </div>
           <ProfileCard />
-          <div>
+          <div className="title">
             Shows
           </div>
           <ShowsCard />
-          <div>
+          <div className="title">
             + add new show
           </div>
         </div>

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './MainInfo.css';
+
 require('typeface-sarabun');
 
 class MainInfo extends React.Component {
@@ -7,11 +8,11 @@ class MainInfo extends React.Component {
         return (
             <div className="info-wrapper">
                 <div className="title-text">
-                    test1
+                    TODO
                 </div>
                 <br />
                 <div className="body-text">
-                    test2
+                    TODO
                 </div>
             </div>
         );

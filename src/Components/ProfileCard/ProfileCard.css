@@ -1,4 +1,5 @@
 .profile-container {
+    position: relative;
     width: 1200px;
     height: 256px;
     box-sizing: border-box;
@@ -15,24 +16,29 @@
     align-items: center;
 }
 
-.right-side {
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-}
-
 .profile-picture {
     width: 174px;
     height: 174px;
     margin: 30px;
     border-radius: 50%;
-    background: black;
     box-sizing: border-box;
 }
 
-.right-title {
-    align-self: flex-start;
-    padding: 30px;
+.right-side {
+    width: 50%;
+    position: relative;
+}
+
+.right-col {
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+}
+
+.left-col {
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
 }
 
 .right-input {
@@ -56,6 +62,7 @@
     font-weight: normal;
     line-height: normal;
     font-size: 36px;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.4);
 }
 
 .body-text {
@@ -63,5 +70,32 @@
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 18px;
+}
+
+.faded {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.edit-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.buttons-container {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 140px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    cursor: default;
 }
