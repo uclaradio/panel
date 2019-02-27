@@ -21,6 +21,7 @@ class Home extends React.Component {
           <div className="title">
             + add new show
           </div>
+          <div className="bottom-space" />
         </div>
       </div>
     );

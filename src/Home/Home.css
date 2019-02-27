@@ -16,3 +16,7 @@
     letter-spacing: 0.1em;
     align-self: flex-start;
 }
+
+.bottom-space {
+    padding: 100px;
+}
