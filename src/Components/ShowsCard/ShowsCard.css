@@ -13,8 +13,7 @@
 
 .left-side {
     width: 50%;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .show-picture {
@@ -52,7 +51,7 @@
 
 .info-wrapper {
     width: 250px;
-    align-self: flex-start;
+
     padding: 30px;
 }
 
@@ -98,4 +97,16 @@
     line-height: normal;
     font-size: 16px;
     cursor: default;
+}
+
+.show-public-toggle {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 13px;
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    padding-top: 20px;
 }

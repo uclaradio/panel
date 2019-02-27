@@ -77,6 +77,11 @@ export default class ShowsCard extends React.Component<Props, State> {
                                 {this.state.description}
                             </div>
                         </div>
+                        <br />
+                        <div className="show-public-toggle">
+                            <input type="checkbox" />
+                            MAKE SHOW PUBLIC
+                        </div>
                     </div>
                 </div>
                 <div className="vl" />
