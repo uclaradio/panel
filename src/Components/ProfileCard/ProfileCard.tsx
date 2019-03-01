@@ -10,7 +10,7 @@ interface State {
     description?: string;
     name?: string;
     email?: string;
-    number?: string;
+    phone?: string;
     edittable?: boolean;
 }
 interface Props { }
@@ -23,7 +23,7 @@ export default class ProfileCard extends React.Component<Props, State> {
             description: 'top 40 pop entusiast, but genre-curious, host of ctrl+f yourself, every wed 12pm',
             name: 'Haejin Jo',
             email: 'professionalhaejin@gmail.com',
-            number: '',
+            phone: '',
             edittable: true
         };
     }
@@ -33,11 +33,23 @@ export default class ProfileCard extends React.Component<Props, State> {
     }
 
     onCancel = () => {
-        this.setState({ edittable: true });
+        this.setState({
+            title: this.state.title,
+            description: this.state.description,
+            name: this.state.name,
+            email: this.state.email,
+            edittable: true
+        });
     }
 
     onSave = () => {
-        this.setState({ edittable: true });
+        this.setState({
+            title: document.getElementById('title')!.textContent as string,
+            description: document.getElementById('description')!.textContent as string,
+            name: document.getElementById('name')!.textContent as string,
+            email: document.getElementById('email')!.textContent as string,
+            edittable: true
+        });
     }
 
     setUnderline = () => {
@@ -57,13 +69,13 @@ export default class ProfileCard extends React.Component<Props, State> {
                     <img className="profile-picture" src={profilePic} />
                     <div className="info-wrapper">
                         <div className="title-text" style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
+                            <div id="title" contentEditable={this.state.edittable ? false : true}>
                                 {this.state.title}
                             </div>
                         </div>
                         <br />
                         <div className="body-text" style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
+                            <div id="description" contentEditable={this.state.edittable ? false : true}>
                                 {this.state.description}
                             </div>
                         </div>
@@ -80,20 +92,20 @@ export default class ProfileCard extends React.Component<Props, State> {
                     </div>
                     <div className="left-col">
                         <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
+                            <div id="name" contentEditable={this.state.edittable ? false : true}>
                                 {this.state.name}
                             </div>
                         </div>
                         <br />
                         <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
+                            <div id="email" contentEditable={this.state.edittable ? false : true}>
                                 {this.state.email}
                             </div>
                         </div>
                         <br />
                         <div style={{ borderBottom: this.setUnderline() }}>
                             <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.number}
+                                {this.state.phone}
                                 <div className="faded">
                                     Enter Phone Number
                                 </div>
