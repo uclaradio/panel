@@ -33,11 +33,11 @@ export default class ProfileCard extends React.Component<Props, State> {
     }
 
     onCancel = () => {
+        document.getElementById('title')!.textContent = this.state.title as string;
+        document.getElementById('description')!.textContent = this.state.description as string;
+        document.getElementById('name')!.textContent = this.state.name as string;
+        document.getElementById('email')!.textContent = this.state.email as string;
         this.setState({
-            title: this.state.title,
-            description: this.state.description,
-            name: this.state.name,
-            email: this.state.email,
             edittable: true
         });
     }
