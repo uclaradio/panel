@@ -17,6 +17,10 @@
     align-self: flex-start;
 }
 
+#add-show {
+    padding-top: 0px;
+}
+
 .bottom-space {
     padding: 100px;
 }

@@ -1,4 +1,5 @@
 .shows-container {
+    margin-bottom: 30px;
     position: relative;
     width: 1200px;
     height: 420px;
@@ -23,27 +24,6 @@
     box-sizing: border-box;
 }
 
-.right-side {
-    width: 50%;
-    display: flex;
-}
-
-.right-col {
-    position: relative;
-    left: 60px;
-    bottom: 10px;
-}
-
-.left-col {
-    position: relative;
-    left: 100px;
-    bottom: 10px;
-}
-
-.right-input {
-    padding: 30px;
-}
-
 .vl {
     border-left: 1px solid rgba(0, 0, 0, 0.4);
     height: 90%;
@@ -51,28 +31,7 @@
 
 .info-wrapper {
     width: 250px;
-
     padding: 30px;
-}
-
-.title-text {
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 36px;
-    border-bottom: 0px solid rgba(0, 0, 0, 0.4);
-}
-
-.body-text {
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-}
-
-.faded {
-    color: rgba(0, 0, 0, 0.4);
 }
 
 .edit-icon {
@@ -92,21 +51,6 @@
     display: flex;
     justify-content: space-between;
     font-family: Sarabun;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
     font-size: 16px;
     cursor: default;
-}
-
-.show-public-toggle {
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 13px;
-    display: flex;
-    width: 140px;
-    justify-content: space-between;
-    padding-top: 20px;
 }

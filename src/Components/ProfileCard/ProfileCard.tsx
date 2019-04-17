@@ -1,13 +1,16 @@
 import * as React from 'react';
 import './ProfileCard.css';
+import DJInfo from '../../Components/DJInfo/DJInfo';
+import ListItem from '../../Components/ListItem/ListItem';
 
 require('typeface-sarabun');
 const editIcon = require('../../Graphics/Edit.png');
 const profilePic = require('../../Graphics/ProfilePic.png');
+const updatable: string[] = ['djname', 'about', 'name', 'email', 'phone'];
 
 interface State {
-    title?: string;
-    description?: string;
+    djname?: string;
+    about?: string;
     name?: string;
     email?: string;
     phone?: string;
@@ -19,8 +22,8 @@ export default class ProfileCard extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = {
-            title: 'DJ Acorn',
-            description: 'top 40 pop entusiast, but genre-curious, host of ctrl+f yourself, every wed 12pm',
+            djname: 'DJ Acorn',
+            about: 'top 40 pop entusiast, but genre-curious, host of ctrl+f yourself, every wed 12pm',
             name: 'Haejin Jo',
             email: 'professionalhaejin@gmail.com',
             phone: '',
@@ -33,27 +36,23 @@ export default class ProfileCard extends React.Component<Props, State> {
     }
 
     onCancel = () => {
-        document.getElementById('title')!.textContent = this.state.title as string;
-        document.getElementById('description')!.textContent = this.state.description as string;
-        document.getElementById('name')!.textContent = this.state.name as string;
-        document.getElementById('email')!.textContent = this.state.email as string;
+        updatable.forEach(element => {
+            (document.getElementById(element) as HTMLInputElement).value = this.state[element] as string;
+        });
         this.setState({
             edittable: true
         });
     }
 
     onSave = () => {
+        updatable.forEach(element => {
+            this.setState({
+                [element]: (document.getElementById(element) as HTMLInputElement).value as string
+            });
+        });
         this.setState({
-            title: document.getElementById('title')!.textContent as string,
-            description: document.getElementById('description')!.textContent as string,
-            name: document.getElementById('name')!.textContent as string,
-            email: document.getElementById('email')!.textContent as string,
             edittable: true
         });
-    }
-
-    setUnderline = () => {
-        return this.state.edittable ? '0px' : '1px solid rgba(0, 0, 0, 0.4)';
     }
 
     render() {
@@ -67,52 +66,14 @@ export default class ProfileCard extends React.Component<Props, State> {
                     </div>)}
                 <div className="left-side">
                     <img className="profile-picture" src={profilePic} />
-                    <div className="info-wrapper">
-                        <div className="title-text" style={{ borderBottom: this.setUnderline() }}>
-                            <div id="title" contentEditable={this.state.edittable ? false : true}>
-                                {this.state.title}
-                            </div>
-                        </div>
-                        <br />
-                        <div className="body-text" style={{ borderBottom: this.setUnderline() }}>
-                            <div id="description" contentEditable={this.state.edittable ? false : true}>
-                                {this.state.description}
-                            </div>
-                        </div>
-                    </div>
+                    <DJInfo djname={this.state.djname} about={this.state.about} edit={this.state.edittable} />
                 </div>
                 <div className="vl" />
-                <div className="right-side">
-                    <div className="right-col">
-                        <div >full name</div>
-                        <br />
-                        <div >email</div>
-                        <br />
-                        <div >phone</div>
-                    </div>
-                    <div className="left-col">
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div id="name" contentEditable={this.state.edittable ? false : true}>
-                                {this.state.name}
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div id="email" contentEditable={this.state.edittable ? false : true}>
-                                {this.state.email}
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.phone}
-                                <div className="faded">
-                                    Enter Phone Number
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <table className="table-wrapper">
+                    <ListItem title="full name" value={this.state.name} id="name" placeholder="Enter Name Here" edit={this.state.edittable} />
+                    <ListItem title="email" value={this.state.email} id="email" placeholder="Enter Email Here" edit={this.state.edittable} />
+                    <ListItem title="phone" value={this.state.phone} id="phone" placeholder="Enter Phone Here" edit={this.state.edittable} />
+                </table>
             </div>
         );
     }

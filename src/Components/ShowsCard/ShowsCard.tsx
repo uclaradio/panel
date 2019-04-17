@@ -1,57 +1,51 @@
 import * as React from 'react';
 import './ShowsCard.css';
+import ShowInfo from '../../Components/ShowInfo/ShowInfo';
+import ListItem from '../../Components/ListItem/ListItem';
 
 require('typeface-sarabun');
 const editIcon = require('../../Graphics/Edit.png');
 const showPic = require('../../Graphics/ShowPic.png');
 
 interface State {
-    title?: string;
-    description?: string;
-    djs?: string;
-    time?: string;
-    genre?: string;
-    facebook?: string;
-    tumblr?: string;
-    soundcloud?: string;
-    mixcloud?: string;
-    edittable?: boolean;
+    edittable: boolean;
 }
-interface Props { }
 
-const d = 'On air conversations with strangers maybe listen';
+interface Props {
+    id: number;
+    title: string;
+    description: string;
+    checkbox: boolean;
+    djs: string;
+    time: string;
+    genre: string;
+    facebook: string;
+    tumblr: string;
+    soundcloud: string;
+    mixcloud: string;
+    cancel: Function;
+    save: Function;
+}
 
 export default class ShowsCard extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = {
-            title: 'ctrl+f yourself',
-            description: d + ' to some of their music too. I’ll be nervous the entire hour.',
-            djs: 'Haejin Jo',
-            time: 'Wednesday 12pm',
-            genre: 'podcast, talk, slice-of-life',
-            facebook: 'https://www.facebook.com/uclaradio.ctrlfyourself/',
-            tumblr: '',
-            soundcloud: 'https://soundcloud.com/ctrlfyourself',
-            mixcloud: '',
             edittable: true
         };
     }
-
     onEdit = () => {
         this.setState({ edittable: false });
     }
 
     onCancel = () => {
         this.setState({ edittable: true });
+        this.props.cancel(this.props.id);
     }
 
     onSave = () => {
         this.setState({ edittable: true });
-    }
-
-    setUnderline = () => {
-        return this.state.edittable ? '0px' : '1px solid rgba(0, 0, 0, 0.4)';
+        this.props.save(this.props.id);
     }
 
     render() {
@@ -65,92 +59,18 @@ export default class ShowsCard extends React.Component<Props, State> {
                     </div>)}
                 <div className="left-side">
                     <img className="show-picture" src={showPic} />
-                    <div className="info-wrapper">
-                        <div className="title-text" style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.title}
-                            </div>
-                        </div>
-                        <br />
-                        <div className="body-text" style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.description}
-                            </div>
-                        </div>
-                        <br />
-                        <div className="show-public-toggle">
-                            <input type="checkbox" />
-                            MAKE SHOW PUBLIC
-                        </div>
-                    </div>
+                    <ShowInfo id={this.props.id} title={this.props.title} description={this.props.description} edit={this.state.edittable} checkbox={this.props.checkbox} />
                 </div>
                 <div className="vl" />
-                <div className="right-side">
-                    <div className="right-col">
-                        <div >DJs</div>
-                        <br />
-                        <div >time</div>
-                        <br />
-                        <div >genre</div>
-                        <br />
-                        <div >facebook</div>
-                        <br />
-                        <div >soundcloud</div>
-                        <br />
-                        <div >tumblr</div>
-                        <br />
-                        <div >mixcloud</div>
-                    </div>
-                    <div className="left-col">
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.djs}
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.time}
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.genre}
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.facebook}
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.soundcloud}
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.tumblr}
-                                <div className="faded">
-                                    http://yourshow.tumblr.com
-                                </div>
-                            </div>
-                        </div>
-                        <br />
-                        <div style={{ borderBottom: this.setUnderline() }}>
-                            <div contentEditable={this.state.edittable ? false : true}>
-                                {this.state.mixcloud}
-                                <div className="faded">
-                                    https://www.mixcloud.com/yourshow
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <table className="table-wrapper">
+                    <ListItem title="DJs" value={this.props.djs} id={'djs' + this.props.id} placeholder="Enter DJ's Here" edit={this.state.edittable} />
+                    <ListItem title="time" value={this.props.time} id={'time' + this.props.id} placeholder="Enter Time Here" edit={this.state.edittable} />
+                    <ListItem title="genre" value={this.props.genre} id={'genre' + this.props.id} placeholder="Enter Genre Here" edit={this.state.edittable} />
+                    <ListItem title="facebook" value={this.props.facebook} id={'facebook' + this.props.id} placeholder="https://www.facebook.com/yourshow" edit={this.state.edittable} />
+                    <ListItem title="tumblr" value={this.props.tumblr} id={'tumblr' + this.props.id} placeholder="https://yourshow.tumblr.com" edit={this.state.edittable} />
+                    <ListItem title="soundcloud" value={this.props.soundcloud} id={'soundcloud' + this.props.id} placeholder="https://soundcloud.com/yourshow" edit={this.state.edittable} />
+                    <ListItem title="mixcloud" value={this.props.mixcloud} id={'mixcloud' + this.props.id} placeholder="https://www.mixcloud.com/yourshow" edit={this.state.edittable} />
+                </table>
             </div>
         );
     }

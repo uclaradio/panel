@@ -25,56 +25,13 @@
     box-sizing: border-box;
 }
 
-.right-side {
-    width: 50%;
-    position: relative;
-}
-
-.right-col {
-    position: absolute;
-    left: 60px;
-    bottom: 10px;
-}
-
-.left-col {
-    position: absolute;
-    left: 100px;
-    bottom: 30px;
-}
-
-.right-input {
-    padding: 30px;
-}
-
 .vl {
     border-left: 1px solid rgba(0, 0, 0, 0.4);
     height: 207px;
 }
 
-.info-wrapper {
-    width: 250px;
-    align-self: flex-start;
-    padding: 30px;
-}
-
-.title-text {
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 36px;
-    border-bottom: 0px solid rgba(0, 0, 0, 0.4);
-}
-
-.body-text {
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-}
-
-.faded {
-    color: rgba(0, 0, 0, 0.4);
+.table-wrapper{
+    padding-left: 50px;
 }
 
 .edit-icon {
@@ -94,9 +51,6 @@
     display: flex;
     justify-content: space-between;
     font-family: Sarabun;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
     font-size: 16px;
     cursor: default;
 }

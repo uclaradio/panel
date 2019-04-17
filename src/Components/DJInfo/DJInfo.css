@@ -1,0 +1,46 @@
+.info-wrapper {
+    width: 250px;
+    align-self: flex-start;
+    padding: 30px;
+}
+
+.title-text {
+    width: 250px;
+    font-family: Sarabun;
+    font-size: 36px;
+}
+
+.body-text{
+    width: 250px;
+    font-family: Sarabun;
+    font-size: 16px;
+}
+
+.underline {
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    position: relative;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.show-public-toggle {
+    font-family: Sarabun;
+    font-size: 13px;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.checkbox {
+    width: 15px;
+    background-color: black;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    color: black;
+}
