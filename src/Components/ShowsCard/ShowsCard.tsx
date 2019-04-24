@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './ShowsCard.css';
-import ShowInfo from '../../Components/ShowInfo/ShowInfo';
+import ShowCardInfo from '../ShowCardInfo/ShowCardInfo';
 import ListItem from '../../Components/ListItem/ListItem';
 
 require('typeface-sarabun');
@@ -59,7 +59,7 @@ export default class ShowsCard extends React.Component<Props, State> {
                     </div>)}
                 <div className="left-side">
                     <img className="show-picture" src={showPic} />
-                    <ShowInfo id={this.props.id} title={this.props.title} description={this.props.description} edit={this.state.edittable} checkbox={this.props.checkbox} />
+                    <ShowCardInfo id={this.props.id} title={this.props.title} description={this.props.description} edit={this.state.edittable} checkbox={this.props.checkbox} />
                 </div>
                 <div className="vl" />
                 <table className="table-wrapper">

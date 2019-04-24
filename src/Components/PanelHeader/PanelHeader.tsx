@@ -1,10 +1,10 @@
 import * as React from 'react';
-import './Header.css';
+import './PanelHeader.css';
 
 const logo = require('../../Graphics/Logo.png');
 require('typeface-sarabun');
 
-class Header extends React.Component {
+class PanelHeader extends React.Component {
     render() {
         return (
             <div className="header-wrapper">
@@ -21,4 +21,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default PanelHeader;

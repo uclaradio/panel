@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './DJInfo.css';
+import './ProfileCardInfo.css';
 
 require('typeface-sarabun');
 
@@ -10,7 +10,7 @@ interface Props {
     edit?: boolean;
 }
 
-class MainInfo extends React.Component<Props, State> {
+class ProfileCardInfo extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
     }
@@ -31,4 +31,4 @@ class MainInfo extends React.Component<Props, State> {
     }
 }
 
-export default MainInfo;
+export default ProfileCardInfo;

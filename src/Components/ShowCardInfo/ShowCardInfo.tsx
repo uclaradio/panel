@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './ShowInfo.css';
+import './ShowCardInfo.css';
 
 require('typeface-sarabun');
 

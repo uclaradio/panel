@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './ProfileCard.css';
-import DJInfo from '../../Components/DJInfo/DJInfo';
+import ProfileCardInfo from '../../Components/ProfileCardInfo/ProfileCardInfo';
 import ListItem from '../../Components/ListItem/ListItem';
 
 require('typeface-sarabun');
@@ -66,7 +66,7 @@ export default class ProfileCard extends React.Component<Props, State> {
                     </div>)}
                 <div className="left-side">
                     <img className="profile-picture" src={profilePic} />
-                    <DJInfo djname={this.state.djname} about={this.state.about} edit={this.state.edittable} />
+                    <ProfileCardInfo djname={this.state.djname} about={this.state.about} edit={this.state.edittable} />
                 </div>
                 <div className="vl" />
                 <table className="table-wrapper">

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ProfileCard from '../Components/ProfileCard/ProfileCard';
-import Header from '../Components/Header/Header';
+import PanelHeader from '../Components/PanelHeader/PanelHeader';
 import ShowsCard from '../Components/ShowsCard/ShowsCard';
 import './Home.css';
 
@@ -76,7 +76,7 @@ class Home extends React.Component<Props, State> {
   render() {
     return (
       <div>
-        <Header />
+        <PanelHeader />
         <div className="cards-wrapper">
           <div className="title">
             DJ Profile
