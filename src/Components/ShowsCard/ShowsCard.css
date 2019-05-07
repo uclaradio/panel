@@ -42,15 +42,21 @@
     height: 20px;
 }
 
-.buttons-container {
+.buttons-wrapper {
     position: absolute;
     bottom: 20px;
     right: 30px;
-    width: 140px;
+    width: 735px;
     height: 20px;
     display: flex;
     justify-content: space-between;
+    cursor: default;
     font-family: Sarabun;
     font-size: 16px;
-    cursor: default;
+}
+
+.right-buttons {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
 }

@@ -25,6 +25,7 @@ interface Props {
     mixcloud: string;
     cancel: Function;
     save: Function;
+    delete: Function;
 }
 
 export default class ShowsCard extends React.Component<Props, State> {
@@ -36,6 +37,11 @@ export default class ShowsCard extends React.Component<Props, State> {
     }
     onEdit = () => {
         this.setState({ edittable: false });
+    }
+
+    onDelete = () => {
+        this.setState({ edittable: true });
+        this.props.delete(this.props.id);
     }
 
     onCancel = () => {
@@ -53,9 +59,12 @@ export default class ShowsCard extends React.Component<Props, State> {
             <div className="shows-container">
                 {this.state.edittable ?
                     <img className="edit-icon" onClick={this.onEdit} src={editIcon} /> :
-                    (<div className="buttons-container">
-                        <div style={{ color: '#FF0000' }} onClick={this.onCancel} >CANCEL</div>
-                        <div style={{ color: 'RoyalBlue' }} onClick={this.onSave} >SAVE</div>
+                    (<div className="buttons-wrapper">
+                        <div style={{ color: '#FF0000' }} onClick={this.onDelete} >DELETE SHOW</div>
+                        <div className="right-buttons">
+                            <div style={{ color: '#FF0000' }} onClick={this.onCancel} >CANCEL</div>
+                            <div style={{ color: 'RoyalBlue' }} onClick={this.onSave} >SAVE</div>
+                        </div>
                     </div>)}
                 <div className="left-side">
                     <img className="show-picture" src={showPic} />
@@ -63,7 +72,7 @@ export default class ShowsCard extends React.Component<Props, State> {
                 </div>
                 <div className="vl" />
                 <table className="table-wrapper">
-                    <ListItem title="DJs" value={this.props.djs} id={'djs' + this.props.id} placeholder="Enter DJ's Here" edit={this.state.edittable} />
+                    <ListItem title="DJs" value={this.props.id.toString()} id={'djs' + this.props.id} placeholder="Enter DJ's Here" edit={this.state.edittable} />
                     <ListItem title="time" value={this.props.time} id={'time' + this.props.id} placeholder="Enter Time Here" edit={this.state.edittable} />
                     <ListItem title="genre" value={this.props.genre} id={'genre' + this.props.id} placeholder="Enter Genre Here" edit={this.state.edittable} />
                     <ListItem title="facebook" value={this.props.facebook} id={'facebook' + this.props.id} placeholder="https://www.facebook.com/yourshow" edit={this.state.edittable} />

@@ -32,7 +32,7 @@
     "label-position": true,
     "max-line-length": [
       true,
-      500
+      5000
     ],
     "member-ordering": [
       true,
@@ -44,7 +44,7 @@
     "no-arg": true,
     "no-bitwise": true,
     "no-console": [
-      true,
+      false,
       "log",
       "error",
       "debug",
