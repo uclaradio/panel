@@ -14,6 +14,11 @@
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
 
+"@types/prop-types@*":
+  version "15.7.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
+  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+
 "@types/react-dom@16.0.3":
   version "16.0.3"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.3.tgz#8accad7eabdab4cca3e1a56f5ccb57de2da0ff64"
@@ -40,9 +45,19 @@
   version "16.0.35"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.35.tgz#7ce8a83cad9690fd965551fc513217a74fc9e079"
 
-"@types/react@16.0.36":
-  version "16.0.36"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.36.tgz#ceb5639013bdb92a94147883052e69bb2c22c69b"
+"@types/react@16.14.28":
+  version "16.14.28"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.28.tgz#073258f3fe7bb80c748842c1f93aeaafe16dffad"
+  integrity sha512-83zBE6+XUVXsdL3iFzOyUewdauaU+KviKCHEGOgSW52coAuqW7tEKQM0E9+ZC0Zk6TELQ2/JgogPvp7FavzFwg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
 abab@^1.0.0, abab@^1.0.3:
   version "1.0.4"
@@ -1418,6 +1433,11 @@ cssom@0.3.x, "cssom@>= 0.3.0 < 0.4.0", "cssom@>= 0.3.2 < 0.4.0":
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
   dependencies:
     cssom "0.3.x"
+
+csstype@^3.0.2:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
+  integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
